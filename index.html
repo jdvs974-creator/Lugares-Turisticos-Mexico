@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los mejores lugares turísticos de México.">
+    <title>México Travel | Descubre México</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+    <a href="#inicio" class="logo">
+        <span class="logo-icon">🇲🇽</span>
+        <span>MÉXICO<span class="logo-highlight">TRAVEL</span></span>
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+        <a href="#inicio">Inicio</a>
+        <a href="#destinos">Destinos</a>
+        <a href="#experiencias">Experiencias</a>
+        <a href="#videos">Videos</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" title="Cambiar tema">🌙</button>
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-tag">🇲🇽 DESCUBRE MÉXICO</span>
+
+        <h1>
+            Un país.
+            <span>Mil aventuras.</span>
+        </h1>
+
+        <p>
+            Explora playas paradisíacas, ciudades históricas,
+            zonas arqueológicas y paisajes que hacen de México
+            un destino único.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#destinos" class="btn btn-primary">
+                Explorar destinos →
+            </a>
+
+            <a href="#quiz" class="btn btn-glass">
+                🎯 Encuentra tu destino
+            </a>
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <strong class="counter" data-target="32">0</strong>
+                <span>Estados</span>
+            </div>
+
+            <div>
+                <strong class="counter" data-target="35">0</strong>
+                <span>Patrimonios UNESCO</span>
+            </div>
+
+            <div>
+                <strong class="counter" data-target="177">0</strong>
+                <span>Pueblos Mágicos+</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+        <span>DESCUBRE MÁS</span>
+        <div>↓</div>
+    </div>
+
+</section>
+
+
+<!-- ================= DESTINOS ================= -->
+<section class="section" id="destinos">
+
+    <div class="section-header">
+        <span class="section-tag">DESTINOS</span>
+
+        <h2>Lugares que debes <span>conocer</span></h2>
+
+        <p>
+            Desde antiguas ciudades mayas hasta playas de aguas cristalinas.
+            Encuentra el destino perfecto para tu próxima aventura.
+        </p>
+    </div>
+
+
+    <!-- BUSCADOR -->
+    <div class="search-container">
+
+        <div class="search-box">
+            <span>🔎</span>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar un destino..."
+            >
+        </div>
+
+        <div class="filters">
+
+            <button class="filter active" data-filter="todos">
+                Todos
+            </button>
+
+            <button class="filter" data-filter="playa">
+                🏝️ Playas
+            </button>
+
+            <button class="filter" data-filter="historia">
+                🏛️ Historia
+            </button>
+
+            <button class="filter" data-filter="naturaleza">
+                🌿 Naturaleza
+            </button>
+
+            <button class="filter" data-filter="ciudad">
+                🌆 Ciudades
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- TARJETAS -->
+    <div class="destinations-grid" id="destinationsGrid">
+                <!-- PALENQUE -->
+        <article
+            class="destination-card"
+            data-category="historia"
+            data-name="Palenque Chiapas"
+        >
+
+            <div class="card-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxdx7aGBLoW_0eTlNapGZJXd8tnX9uJ1nNKD9SCScEkQBqIw6i3aU0dnXf&s=10"
+                    alt="Palenque Chiapas"
+                >
+
+                <span class="card-category">🏛️ HISTORIA</span>
+
+                <button
+                    class="favorite-btn"
+                    data-place="Palenque"
+                >♡</button>
+
+            </div>
+
+            <div class="card-content">
+
+                <span class="location">📍 Chiapas</span>
+
+                <h3>Palenque</h3>
+
+                <p>
+                    Una impresionante ciudad maya rodeada
+                    por la selva tropical de Chiapas.
+                </p>
+
+                <div class="card-footer">
+                    <span>🌿 Cultura Maya</span>
+
+                    <button
+                        class="details-btn"
+                        data-place="Palenque"
+                    >
+                        Ver más →
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- HUATULCO -->
+        <article
+            class="destination-card"
+            data-category="playa"
+            data-name="Huatulco Oaxaca"
+        >
+
+            <div class="card-image">
+
+                <img
+                    src="https://media-cdn.tripadvisor.com/media/photo-s/04/0b/c1/d3/barcelo-huatulco-beach.jpg"
+                    alt="Huatulco Oaxaca"
+                >
+
+                <span class="card-category">🏝️ PLAYA</span>
+
+                <button
+                    class="favorite-btn"
+                    data-place="Huatulco"
+                >♡</button>
+
+            </div>
+
+            <div class="card-content">
+
+                <span class="location">📍 Oaxaca</span>
+
+                <h3>Huatulco</h3>
+
+                <p>
+                    Hermosas bahías, playas tranquilas y
+                    paisajes naturales frente al Pacífico.
+                </p>
+
+                <div class="card-footer">
+                    <span>🌊 Pacífico mexicano</span>
+
+                    <button
+                        class="details-btn"
+                        data-place="Huatulco"
+                    >
+                        Ver más →
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PUERTO VALLARTA -->
+        <article
+            class="destination-card"
+            data-category="playa"
+            data-name="Puerto Vallarta Jalisco"
+        >
+
+            <div class="card-image">
+
+                <img
+                    src="https://villacdn.villagroupresorts.com/uploads/corporate_destiny/image_full/3/Vallarta-Lifestyle.jpg"
+                    alt="Puerto Vallarta"
+                >
+
+                <span class="card-category">🏝️ PLAYA</span>
+
+                <button
+                    class="favorite-btn"
+                    data-place="Puerto Vallarta"
+                >♡</button>
+
+            </div>
+
+            <div class="card-content">
+
+                <span class="location">📍 Jalisco</span>
+
+                <h3>Puerto Vallarta</h3>
+
+                <p>
+                    Playas, montañas, gastronomía y un hermoso
+                    malecón frente al océano Pacífico.
+                </p>
+
+                <div class="card-footer">
+                    <span>🌅 Malecón</span>
+
+                    <button
+                        class="details-btn"
+                        data-place="Puerto Vallarta"
+                    >
+                        Ver más →
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- COPPER CANYON -->
+        <article
+            class="destination-card"
+            data-category="naturaleza"
+            data-name="Barrancas del Cobre Chihuahua"
+        >
+
+            <div class="card-image">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxQDTegb0YMVl98YQV7KET_wLw8dolJizlRdkWNfD3TA&s=10.jpeg"
+                    alt="Barrancas del Cobre"
+                >
+
+                <span class="card-category">🌿 NATURALEZA</span>
+
+                <button
+                    class="favorite-btn"
+                    data-place="Barrancas del Cobre"
+                >♡</button>
+
+            </div>
+
+            <div class="card-content">
+
+                <span class="location">📍 Chihuahua</span>
+
+                <h3>Barrancas del Cobre</h3>
+
+                <p>
+                    Impresionantes cañones, montañas y paisajes
+                    naturales en el corazón de Chihuahua.
+                </p>
+
+                <div class="card-footer">
+                    <span>🚂 El Chepe</span>
+
+                    <button
+                        class="details-btn"
+                        data-place="Barrancas del Cobre"
+                    >
+                        Ver más →
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- SAN MIGUEL DE ALLENDE -->
+        <article
+            class="destination-card"
+            data-category="ciudad"
+            data-name="San Miguel de Allende Guanajuato"
+        >
+
+            <div class="card-image">
+
+                <img
+                    src="https://luxrentalmgmt.com/wp-content/uploads/2023/01/San-Miguel-de-Allende-3.jpg"
+                    alt="San Miguel de Allende"
+                >
+
+                <span class="card-category">🌆 CULTURA</span>
+
+                <button
+                    class="favorite-btn"
+                    data-place="San Miguel de Allende"
+                >♡</button>
+
+            </div>
+
+            <div class="card-content">
+
+                <span class="location">📍 Guanajuato</span>
+
+                <h3>San Miguel de Allende</h3>
+
+                <p>
+                    Arquitectura colonial, calles coloridas,
+                    arte y una gran riqueza cultural.
+                </p>
+
+                <div class="card-footer">
+                    <span>🎨 Arte y cultura</span>
+
+                    <button
+                        class="details-btn"
+                        data-place="San Miguel de Allende"
+                    >
+                        Ver más →
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- TULUM -->
+        <article
+            class="destination-card"
+            data-category="historia"
+            data-name="Tulum Quintana Roo"
+        >
+
+            <div class="card-image">
+
+                <img
+                    src="https://lugares.inah.gob.mx/sites/default/files/2025-10/Tulum_SantiagoArau_2019.jpg"
+                    alt="Tulum Quintana Roo"
+                >
+
+                <span class="card-category">🏛️ HISTORIA</span>
+
+                <button
+                    class="favorite-btn"
+                    data-place="Tulum"
+                >♡</button>
+
+            </div>
+
+            <div class="card-content">
+
+                <span class="location">📍 Quintana Roo</span>
+
+                <h3>Tulum</h3>
+
+                <p>
+                    Antigua ciudad maya situada frente al mar
+                    Caribe, rodeada de naturaleza.
+                </p>
+
+                <div class="card-footer">
+                    <span>🌊 Ruinas junto al mar</span>
+
+                    <button
+                        class="details-btn"
+                        data-place="Tulum"
+                    >
+                        Ver más →
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CANCÚN -->
+        <article
+            class="destination-card"
+            data-category="playa"
+            data-name="Cancún Quintana Roo"
+        >
+
+            <div class="card-image">
+
+                <img
+                    src="https://content.r9cdn.net/rimg/dimg/f2/b1/89e06bf7-city-34713-16ed2f2c7f1.jpg?width=1366&height=768&crop=true"
+                    alt="Playa de Cancún"
+                >
+
+                <span class="card-category">🏝️ PLAYA</span>
+
+                <button
+                    class="favorite-btn"
+                    data-place="Cancún"
+                >♡</button>
+
+            </div>
+
+            <div class="card-content">
+
+                <span class="location">📍 Quintana Roo</span>
+
+                <h3>Cancún</h3>
+
+                <p>
+                    Playas de arena blanca, aguas turquesa y
+                    una vibrante vida nocturna.
+                </p>
+
+                <div class="card-footer">
+                    <span>☀️ Caribe mexicano</span>
+                    <button class="details-btn" data-place="Cancún">
+                        Ver más →
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- TEOTIHUACÁN -->
+        <article
+            class="destination-card"
+            data-category="historia"
+            data-name="Teotihuacán Estado de México"
+        >
+
+            <div class="card-image">
+
+                <img
+                    src="https://dynamic-media.tacdn.com/media/photo-o/34/29/8f/94/caption.jpg?f=webp&w=1000&h=700"
+                    alt="Pirámides de Teotihuacán"
+                >
+
+                <span class="card-category">🏛️ HISTORIA</span>
+
+                <button
+                    class="favorite-btn"
+                    data-place="Teotihuacán"
+                >♡</button>
+
+            </div>
+
+            <div class="card-content">
+
+                <span class="location">📍 Estado de México</span>
+
+                <h3>Teotihuacán</h3>
+
+                <p>
+                    La impresionante Ciudad de los Dioses,
+                    hogar de la Pirámide del Sol.
+                </p>
+
+                <div class="card-footer">
+                    <span>🏺 Cultura antigua</span>
+                    <button class="details-btn" data-place="Teotihuacán">
+                        Ver más →
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- OAXACA -->
+        <article
+            class="destination-card"
+            data-category="ciudad"
+            data-name="Oaxaca Oaxaca"
+        >
+
+            <div class="card-image">
+
+                <img
+                    src="https://www.geckoroutes.com/_next/image/?url=%2Fimages%2Fwp-uploads%2F2021%2F06%2FOaxaca-activities.jpg&w=3840&q=75"
+                    alt="Oaxaca México"
+                >
+
+                <span class="card-category">🌆 CULTURA</span>
+
+                <button
+                    class="favorite-btn"
+                    data-place="Oaxaca"
+                >♡</button>
+
+            </div>
+
+            <div class="card-content">
+
+                <span class="location">📍 Oaxaca</span>
+
+                <h3>Oaxaca</h3>
+
+                <p>
+                    Gastronomía, arquitectura colonial, tradiciones
+                    y una cultura extraordinaria.
+                </p>
+
+                <div class="card-footer">
+                    <span>🌮 Gastronomía</span>
+                    <button class="details-btn" data-place="Oaxaca">
+                        Ver más →
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- LOS CABOS -->
+        <article
+            class="destination-card"
+            data-category="naturaleza"
+            data-name="Los Cabos Baja California Sur"
+        >
+
+            <div class="card-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1000&q=85"
+                    alt="Los Cabos"
+                >
+
+                <span class="card-category">🌿 NATURALEZA</span>
+
+                <button
+                    class="favorite-btn"
+                    data-place="Los Cabos"
+                >♡</button>
+
+            </div>
+
+            <div class="card-content">
+
+                <span class="location">📍 Baja California Sur</span>
+
+                <h3>Los Cabos</h3>
+
+                <p>
+                    Desierto, mar y formaciones naturales
+                    en un paisaje espectacular.
+                </p>
+
+                <div class="card-footer">
+                    <span>🐋 Vida marina</span>
+                    <button class="details-btn" data-place="Los Cabos">
+                        Ver más →
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CDMX -->
+        <article
+            class="destination-card"
+            data-category="ciudad"
+            data-name="Ciudad de México CDMX"
+        >
+
+            <div class="card-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518659526054-190340b32735?auto=format&fit=crop&w=1000&q=85"
+                    alt="Ciudad de México"
+                >
+
+                <span class="card-category">🌆 CIUDAD</span>
+
+                <button
+                    class="favorite-btn"
+                    data-place="Ciudad de México"
+                >♡</button>
+
+            </div>
+
+            <div class="card-content">
+
+                <span class="location">📍 Ciudad de México</span>
+
+                <h3>Ciudad de México</h3>
+
+                <p>
+                    Museos, historia, gastronomía y una de las
+                    ciudades más grandes del mundo.
+                </p>
+
+                <div class="card-footer">
+                    <span>🏙️ Metrópoli</span>
+                    <button class="details-btn" data-place="CDMX">
+                        Ver más →
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CHICHÉN ITZÁ -->
+        <article
+            class="destination-card"
+            data-category="historia"
+            data-name="Chichen Itza Yucatan"
+        >
+
+            <div class="card-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&w=1000&q=85"
+                    alt="Chichén Itzá"
+                >
+
+                <span class="card-category">🏛️ HISTORIA</span>
+
+                <button
+                    class="favorite-btn"
+                    data-place="Chichén Itzá"
+                >♡</button>
+
+            </div>
+
+            <div class="card-content">
+
+                <span class="location">📍 Yucatán</span>
+
+                <h3>Chichén Itzá</h3>
+
+                <p>
+                    Una de las grandes ciudades de la civilización
+                    maya y una de las maravillas del mundo.
+                </p>
+
+                <div class="card-footer">
+                    <span>🌎 Mundo Maya</span>
+                    <button class="details-btn" data-place="Chichén Itzá">
+                        Ver más →
+                    </button>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+    <div class="no-results" id="noResults">
+        <span>🔍</span>
+        <h3>No encontramos ese destino</h3>
+        <p>Prueba con otro nombre o categoría.</p>
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCIAS ================= -->
+<section class="experiences" id="experiencias">
+
+    <div class="section-header light">
+
+        <span class="section-tag">EXPERIENCIAS</span>
+
+        <h2>Vive México de una forma <span>única</span></h2>
+
+        <p>
+            México no solamente se visita. Se experimenta.
+        </p>
+
+    </div>
+
+    <div class="experience-grid">
+
+        <div class="experience-card">
+            <div class="experience-icon">🌮</div>
+            <h3>Gastronomía</h3>
+            <p>
+                Descubre tacos, mole, pozole, cochinita pibil
+                y cientos de sabores tradicionales.
+            </p>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-icon">🏺</div>
+            <h3>Cultura</h3>
+            <p>
+                Conoce las culturas que han construido
+                la identidad mexicana.
+            </p>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-icon">🌊</div>
+            <h3>Aventura</h3>
+            <p>
+                Buceo, senderismo, surf, tirolesas y
+                experiencias llenas de adrenalina.
+            </p>
+        </div>
+
+        <div class="experience-card">
+            <div class="experience-icon">🎉</div>
+            <h3>Tradiciones</h3>
+            <p>
+                Vive el Día de Muertos, festivales,
+                música y celebraciones.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= VIDEOS ================= -->
+<section class="section" id="videos">
+
+    <div class="section-header">
+
+        <span class="section-tag">MULTIMEDIA</span>
+
+        <h2>México en <span>video</span></h2>
+
+        <p>
+            Déjate inspirar por algunos de los paisajes
+            más impresionantes de nuestro país.
+        </p>
+
+    </div>
+
+    <div class="video-grid">
+
+        <div class="video-card">
+
+            <div class="video-wrapper">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3Rob_ellUyU?si=KN78Tj2J67_b2scQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+
+            <div class="video-info">
+                <span>🇲🇽 MÉXICO</span>
+                <h3>Descubre la belleza de México</h3>
+            </div>
+
+        </div>
+
+
+        <div class="video-card">
+
+            <div class="video-wrapper">
+
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/udMhyvXlgGk?si=KxSd-z7DKf_AOLXF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+
+            <div class="video-info">
+                <span>🌎 VIAJES</span>
+                <h3>Los lugares que debes visitar</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUIZ ================= -->
+<section class="quiz-section" id="quiz">
+
+    <div class="quiz-container">
+
+        <div class="quiz-heading">
+
+            <span class="section-tag">QUIZ TURÍSTICO</span>
+
+            <h2>¿Qué destino mexicano es para ti?</h2>
+
+            <p>
+                Responde algunas preguntas y descubre
+                qué lugar podría ser perfecto para tu próxima aventura.
+            </p>
+
+        </div>
+
+
+        <div class="quiz-box" id="quizBox">
+
+            <div class="quiz-progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <div class="question-number">
+                Pregunta <span id="questionNumber">1</span> de 5
+            </div>
+
+            <h3 id="questionText">
+                ¿Qué tipo de viaje prefieres?
+            </h3>
+
+            <div class="answers" id="answers"></div>
+
+            <button class="quiz-next" id="nextQuestion">
+                Siguiente →
+            </button>
+
+        </div>
+
+
+        <div class="quiz-result" id="quizResult">
+
+            <div class="result-icon">🎉</div>
+
+            <span>¡TU DESTINO IDEAL ES!</span>
+
+            <h2 id="resultTitle">Cancún</h2>
+
+            <p id="resultDescription"></p>
+
+            <button class="btn btn-primary" id="restartQuiz">
+                Repetir quiz
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GALERÍA ================= -->
+<section class="section">
+
+    <div class="section-header">
+
+        <span class="section-tag">GALERÍA</span>
+
+        <h2>Postales de <span>México</span></h2>
+
+    </div>
+
+    <div class="gallery">
+
+        <div class="gallery-item large">
+            <img
+                src="https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&w=1200&q=85"
+                alt="México"
+            >
+        </div>
+
+        <div class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=85"
+                alt="Playa mexicana"
+            >
+        </div>
+
+        <div class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1568402102990-bc541580b59f?auto=format&fit=crop&w=800&q=85"
+                alt="Zona arqueológica"
+            >
+        </div>
+
+        <div class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=800&q=85"
+                alt="Naturaleza"
+            >
+        </div>
+
+        <div class="gallery-item">
+            <img
+                src="https://images.unsplash.com/photo-1518659526054-190340b32735?auto=format&fit=crop&w=800&q=85"
+                alt="Ciudad"
+            >
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACTO ================= -->
+<section class="contact-section" id="contacto">
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <span class="section-tag">CONTACTO</span>
+
+            <h2>Planea tu próxima <span>aventura</span></h2>
+
+            <p>
+                ¿Tienes dudas sobre algún destino?
+                Déjanos tus datos y recibe recomendaciones
+                para tu próximo viaje.
+            </p>
+
+            <div class="contact-details">
+
+                <div>
+                    <span>📧</span>
+                    <p>a8282805939@gmail.com</p>
+                </div>
+
+                <div>
+                    <span>📍</span>
+                    <p>Estado de México, México</p>
+                </div>
+
+                <div>
+                    <span>📞</span>
+                    <p>+52 55 22 96 91 22</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <form class="contact-form" id="contactForm">
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Tu nombre"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label>Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="correo@ejemplo.com"
+                        required
+                    >
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Destino de interés</label>
+
+                <select id="destination" required>
+
+                    <option value="">
+                        Selecciona un destino
+                    </option>
+
+                    <option>Cancún</option>
+                    <option>Teotihuacán</option>
+                    <option>Oaxaca</option>
+                    <option>Los Cabos</option>
+                    <option>Ciudad de México</option>
+                    <option>Chichén Itzá</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Mensaje</label>
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Cuéntanos qué tipo de viaje buscas..."
+                    required
+                ></textarea>
+
+            </div>
+
+            <label class="checkbox">
+
+                <input type="checkbox" required>
+
+                <span>
+                    Acepto recibir información turística.
+                </span>
+
+            </label>
+
+            <button class="btn btn-primary submit-btn" type="submit">
+                Enviar mensaje 🚀
+            </button>
+
+            <div class="form-message" id="formMessage"></div>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">🇲🇽</span>
+                MÉXICO<span class="logo-highlight">TRAVEL</span>
+            </a>
+
+            <p>
+                Descubre, explora y vive México.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>Explorar</h4>
+
+            <a href="#destinos">Destinos</a>
+            <a href="#experiencias">Experiencias</a>
+            <a href="#videos">Videos</a>
+            <a href="#quiz">Quiz</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+
+
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 México Travel. Proyecto turístico.</p>
+        <p>Hecho con ❤️ de Mexico para el Mundo</p>
+    </div>
+
+</footer>
+
+
+<!-- ================= MODAL ================= -->
+<div class="modal" id="destinationModal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" id="modalClose">×</button>
+
+        <div class="modal-image">
+            <img id="modalImage" src="" alt="">
+        </div>
+
+        <div class="modal-body">
+
+            <span id="modalLocation"></span>
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalDescription"></p>
+
+            <div class="modal-info">
+
+                <div>
+                    <strong>🌡️</strong>
+                    <span>Clima agradable</span>
+                </div>
+
+                <div>
+                    <strong>📸</strong>
+                    <span>Fotografía</span>
+                </div>
+
+                <div>
+                    <strong>🎒</strong>
+                    <span>Aventura</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= TOAST ================= -->
+<div class="toast" id="toast">
+    <span>✓</span>
+    <p id="toastText">Destino agregado a favoritos</p>
+</div>
+
+
+<button class="back-top" id="backTop">↑</button>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
